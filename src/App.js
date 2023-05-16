@@ -1,6 +1,6 @@
 import './App.css';
-import Header from './comp/header'
-import Todo from './comp/todo'
+import Header from './comp/Header'
+import Todo from './comp/Todo'
 
 const todos = [
   {
