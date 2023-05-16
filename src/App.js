@@ -2,14 +2,7 @@ import './App.css';
 import Header from './comp/Header'
 import Todo from './comp/Todo'
 
-const onDelete = (todo) => {
-  for (let i = 0; i < todos.length; i++) {
-    if (todos[i] === todo) {
-      todos.splice(i, 1);
-    }
-  }
-  console.log(todos)
-}
+const onDelete = (todo) => todos.splice(todos.indexOf(todo), 1);
 
 const todos = [
   {
