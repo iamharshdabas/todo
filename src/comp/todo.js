@@ -1,8 +1,9 @@
 export default function Header({ todos }) {
-  const currentTodo = todos[0]
   return (
     <>
-      <h1>{currentTodo.item}</h1>
+      {todos.map((todo) => {
+        return <h1>{todo.item}</h1>
+      })}
     </>
   )
 }
