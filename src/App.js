@@ -16,10 +16,10 @@ const todos = [
 
 function App() {
   return (
-    <>
+    <div className='container'>
       <Header />
       <Todo todos={todos} />
-    </>
+    </div>
   );
 }
 
