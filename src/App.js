@@ -1,6 +1,5 @@
 import './App.css';
-import Header from './comp/Header'
-import Todo from './comp/Todo'
+import Todo from './Todo'
 import { useState } from "react";
 
 function App() {
@@ -24,7 +23,6 @@ function App() {
 
   return (
     <div className='container'>
-      <Header />
       <Todo todos={todos} onDelete={onDelete} />
     </div>
   );
