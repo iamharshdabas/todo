@@ -34,6 +34,7 @@ function App() {
         </label>
         <button type="submit">Add</button>
       </form>
+      {todos.length === 0 && <h1>No Todo</h1>}
       {todos.map((todo) => {
         return (
           <>
