@@ -1,10 +1,11 @@
 const Todo = ({ todos, setTodos }) => {
-
   const onDelete = (todo) => {
-    setTodos(todos.filter((item) => {
-      return item !== todo
-    }))
-  }
+    setTodos(
+      todos.filter((item) => {
+        return item !== todo;
+      })
+    );
+  };
 
   return (
     <>
@@ -13,12 +14,14 @@ const Todo = ({ todos, setTodos }) => {
         return (
           <>
             <h1>{todo.message}</h1>
-            <button type="button" onClick={() => onDelete(todo)}>Delete</button>
+            <button type='button' onClick={() => onDelete(todo)}>
+              Delete
+            </button>
           </>
-        )
+        );
       })}
     </>
-  )
-}
+  );
+};
 
-export default Todo
+export default Todo;
