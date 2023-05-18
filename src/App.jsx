@@ -2,7 +2,7 @@ import { useState } from "react"
 import Form from "./Form"
 import Todo from "./Todo"
 
-function App() {
+const App = () => {
   const [todos, setTodos] = useState([])
 
   return (
